@@ -9,13 +9,24 @@ $awesome-red: #DD3D2A;
 $awesome-gray: #5D5D5D;
 $awesome-lightgray: #999999;
 $awesome-darkgray: #333333;
-$bg: white;
+$bg: #EFEFEF;
 
 :root {
     background-color: $bg;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding: 2em 3em;
+
+    #document {
+        background-color: white;
+        width: 8.5in;
+        height: 11in;
+        padding: 0.3in 0.5in;
+        margin: 0 auto;
+        box-shadow: 0 3px 10px 0 rgba(0,0,0,0.3);
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     .about-me {
         text-align: center;
@@ -70,7 +81,7 @@ $bg: white;
 
     section {
         width: 100%;
-        margin-top: 1.5em;
+        margin-top: 1em;
         font-family: 'Source Sans Pro';
 
         .section__item {
@@ -80,7 +91,7 @@ $bg: white;
         .section__heading {
             color: $awesome-red;
             font-weight: 700;
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin-bottom: 0.3em;
             display: flex;
             flex-direction: row;
@@ -169,5 +180,17 @@ $bg: white;
                 flex-grow: 1;
             }
         }
+    }
+}
+
+@media print {
+    :root #document {
+        top: initial;
+        bottom: initial;
+        transform: none;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
     }
 }

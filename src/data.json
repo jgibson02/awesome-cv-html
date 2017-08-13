@@ -4,7 +4,7 @@
     "about-me": {
         "first-name": "John H.",
         "last-name": "Gibson",
-        "address": "Home: 1036 Hemlock Lane, Enola, Pennsylvania, 17025, United States",
+        "address": "Home: 1036 Hemlock Lane, Enola, Pennsylvania 17025<br/>School: 525 East 2nd St., Room 328 Luzerne Hall, Bloomsburg, Pennsylvania 17815",
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
         "email": "jonathangibson02@gmail.com",
@@ -25,9 +25,10 @@
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Exp. May 2019",
             "list-items": [
-                "Dean's List: Spring 2016 - Present",
-                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology",
-                "Won the November 2016 Department of Mathematics and Digital Sciences Problem Solving Competition"
+                "Dean's List: Spring 2016 - Present.",
+                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology.",
+                "Won the November 2016 Department of Mathematics and Digital Sciences Problem Solving Competition.",
+                "Honors program: Performed 16 hours of community service, landscaping and cleaning up for a local daycare, as well as cooking and serving meals for the Catholic Campus Ministry."
             ]
         }
     ],
@@ -39,9 +40,9 @@
             "location": "Hampton, Virginia",
             "date-range": "Jun. 2017 - Aug. 2017",
             "list-items": [
-                "Dean's List: Spring 2016 - Present",
-                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology",
-                "Won the November 2016 Department of Mathematics and Digital Sciences Problem Solving Competition"
+                "Developed distributable plugin in Java to enable system engineers to track changes to UML diagram projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+                "Designed and implemented a web application with React.js to review and comment on the most recent version of a UML project.",
+                "Promoted and led major project design overhauls to accurately meed system engineers' needs."
             ]
         },
         {
@@ -79,15 +80,6 @@
             "date-range": "Sep. 2016 - Present",
             "list-items": [
                 "Provided tutorial services for 3-4 hours a week in freshmen-level Computer Science and Math courses."
-            ]
-        },
-        {
-            "organization": "Bloomsburg University Honors Program",
-            "role": "Honors Student",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Aug. 2015 - Present",
-            "list-items": [
-                "Performed 16 hours of community service, performing landscaping and cleanup for a local daycare, as well as cooking and serving meals for the Catholic Campus Ministry."
             ]
         }
     ],

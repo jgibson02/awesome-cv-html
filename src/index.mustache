@@ -5,11 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
+    <div id="document">
     <header class="about-me">
         {{#about-me}}
             <h1 class="about-me__name">{{about-me.first-name}} <span class="about-me__last-name">{{about-me.last-name}}</span></h1>
             <h6 class="about-me__position">{{about-me.position}}</h6>
-            <h6 class="about-me__address">{{about-me.address}}</h6>
+            <h6 class="about-me__address">{{{about-me.address}}}</h6>
             <span class="about-me__social">
                 <h6><a href="tel:{{about-me.mobile}}"><i class="fa fa-phone"></i>{{about-me.mobile-display}}</a></h6>
                 <h6><a href="mailto:{{about-me.email}}"><i class="fa fa-envelope"></i>{{about-me.email}}</a></h6>
@@ -55,7 +56,7 @@
                     <h4 class="section__location">{{location}}</h4>
                 </div>
                 <div>
-                    <h5 class="section__subsubheading">{{study}}</h5>
+                    <h5 class="section__subsubheading">{{title}}</h5>
                     <h5 class="section__date-range">{{date-range}}</h5>
                 </div>
                 <ul>
@@ -113,5 +114,6 @@
             <td class="footer__filler"></td>
         </table>
     </footer>
+    </div>
 </body>
 </html>
