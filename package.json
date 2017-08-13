@@ -1,0 +1,19 @@
+{
+  "name": "jgibson-resume",
+  "version": "1.0.0",
+  "description": "My resume, originally created using Awesome-CV by posquit0, now ported to HTML+CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Gibson",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-mustache-inverted": "^2.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
+  }
+}

@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>Resume of John Gibson</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <header class="about-me">
+        {{#about-me}}
+            <h1 class="about-me__name">{{about-me.first-name}} <span class="about-me__last-name">{{about-me.last-name}}</span></h1>
+            <h6 class="about-me__position">{{about-me.position}}</h6>
+            <h6 class="about-me__address">{{about-me.address}}</h6>
+            <span class="about-me__social">
+                <h6><a href="tel:{{about-me.mobile}}"><i class="fa fa-phone"></i>{{about-me.mobile-display}}</a></h6>
+                <h6><a href="mailto:{{about-me.email}}"><i class="fa fa-envelope"></i>{{about-me.email}}</a></h6>
+                <h6><a href="{{about-me.website}}"><i class="fa fa-home"></i>{{about-me.website}}</a></h6>
+                <h6><a href="https://www.github.com/{{about-me.github}}"><i class="fa fa-github-alt"></i>{{about-me.github}}</a></h6>
+                <h6><a href="https://www.linkedin.com/in/{{about-me.linkedin}}"><i class="fa fa-linkedin-square"></i>{{about-me.linkedin}}</a></h6>
+            </span>
+        {{/about-me}}
+    </header>
+    <section class="education">
+        <div class="section__heading">
+            <h1>Education</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        {{#education}}
+        <div class="section__item">
+            <div>
+                <h4 class="education__institution section__subheading">{{institution}}</h4>
+                <h4 class="section__location">{{location}}</h4>
+            </div>
+            <div>
+                <h5 class="section__subsubheading">{{study}}</h5>
+                <h5 class="section__date-range">{{date-range}}</h5>
+            </div>
+            <ul>
+                {{#list-items}}
+                <li>{{.}}</li>
+                {{/list-items}}
+            </ul>
+        </div>
+        {{/education}}
+    </section>
+
+    <section class="experience">
+        <div class="section__heading">
+            <h1>Experience</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        {{#experience}}
+            <div class="section__item">
+                <div>
+                    <h4 class="education__institution section__subheading">{{institution}}</h4>
+                    <h4 class="section__location">{{location}}</h4>
+                </div>
+                <div>
+                    <h5 class="section__subsubheading">{{study}}</h5>
+                    <h5 class="section__date-range">{{date-range}}</h5>
+                </div>
+                <ul>
+                    {{#list-items}}
+                    <li>{{.}}</li>
+                    {{/list-items}}
+                </ul>
+            </div>
+        {{/experience}}
+    </section>
+
+    <section class="extracurricular">
+        <div class="section__heading">
+            <h1>Extracurricular Activity</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        {{#extracurricular}}
+            <div class="section__item">
+                <div>
+                    <h4 class="education__institution section__subheading">{{role}}</h4>
+                    <h4 class="section__location">{{location}}</h4>
+                </div>
+                <div>
+                    <h5 class="section__subsubheading">{{organization}}</h5>
+                    <h5 class="section__date-range">{{date-range}}</h5>
+                </div>
+                <ul>
+                    {{#list-items}}
+                    <li>{{.}}</li>
+                    {{/list-items}}
+                </ul>
+            </div>
+        {{/extracurricular}}
+    </section>
+
+    <section class="skills">
+        <div class="section__heading">
+            <h1>Skills</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        <table>
+        {{#skills}}
+            <tr>
+                <td class="skills__heading">{{heading}}</td>
+                <td class="skills__list">{{#list-items}} <span>{{.}}</span> {{/list-items}}</td>
+            </tr>
+        {{/skills}}
+        </table>
+    </section>
+
+    <footer>
+        <table>
+            <td class="footer__date">{{date}}</td>
+            <td class="footer__text">{{about-me.first-name}} {{about-me.last-name}} · Résumé</td>
+            <td class="footer__filler"></td>
+        </table>
+    </footer>
+</body>
+</html>
