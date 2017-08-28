@@ -15,7 +15,7 @@
     },
 
     "committees": [
-
+        
     ],
 
     "education": [
@@ -40,9 +40,11 @@
             "location": "Hampton, Virginia",
             "date-range": "Jun. 2017 - Aug. 2017",
             "list-items": [
-                "Developed distributable plugin in Java to enable system engineers to track changes to UML diagram projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
-                "Designed and implemented a web application with React.js to review and comment on the most recent version of a UML project.",
-                "Promoted and led major project design overhauls to accurately meed system engineers' needs."
+                "Developed a distributable plugin in Java to enable system engineers to track changes to UML diagram projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+                "Designed and built a React web application to view and comment on the diagrams of the current state of a project, with a build process automated by Gulp.",
+                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
+                "Taught the use of web technologies and their context in software development to peers and mentors.",
+                "Led major project design overhauls to accurately meet system engineers' needs."
             ]
         },
         {
@@ -51,10 +53,10 @@
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2016 - Present",
             "list-items": [
-                "Support the academic success and wellness of freshmen in the Computer Science program.",
+                "Supporting the academic success and wellness of freshmen in the Computer Science program.",
                 "Tutoring in lower level Computer Science and Math subjects.",
-                "Plan and organize events for members of the Living and Learning Community.",
-                "Establish a dedicated server for LLC-related activities including a web hosting service.",
+                "Planning and organizing events for members of the Living and Learning Community.",
+                "Setting up a dedicated server for LLC-related activities including a webserver.",
                 "Building and programming GoPiGo robots with LLC members and faculty directors."
             ]
         }
@@ -68,9 +70,9 @@
             "date-range": "Aug. 2015 - Present",
             "list-items": [
                 "Vice-President, Fall/Spring 2017-2018.",
-                "Attended weekly meetings varying in topic from self-development to technologies such as AWS, webcrawlers, and extending the MEAN stack.",
-                "Participated in a student-led project to construct a system of GPS trackers with the purpose of building a web & mobile application to track on-campus shuttle buses.",
-                "Competitor for programming team, placed 4th at PACISE 2017."
+                "Learned from topics ranging from self-development to technologies such as AWS, webcrawlers, and the MEAN stack.",
+                "Participated in a student-led project to construct a system of GPS trackers with the purpose of building a cross-platform app to track campus shuttle buses.",
+                "Competitor for programming competition team, placed 4th at PACISE 2017."
             ]
         },
         {

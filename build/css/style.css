@@ -32,15 +32,15 @@ table {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
   :root #document {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: white;
     width: 8.5in;
     height: 11in;
     padding: 0.3in 0.5in;
-    margin: 0 auto;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
+    margin: 5vh auto;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3); }
   :root .about-me {
     text-align: center; }
     :root .about-me .about-me__name {
@@ -53,8 +53,9 @@ table {
       line-height: 1.3em; }
     :root .about-me .about-me__position {
       color: #DD3D2A;
-      font-weight: bold;
-      font-variant: small-caps; }
+      font-family: 'Source Sans Pro';
+      font-variant: small-caps;
+      font-size: 0.9333rem; }
     :root .about-me .about-me__address {
       font-weight: 500;
       font-style: italic;
@@ -72,62 +73,70 @@ table {
         margin-right: 0.5em; }
   :root section {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 0.5rem;
     font-family: 'Source Sans Pro'; }
-    :root section .section__item {
-      margin-bottom: 1em; }
     :root section .section__heading {
       color: #DD3D2A;
       font-weight: 700;
       font-size: 1.4em;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.15em;
       display: flex;
       flex-direction: row; }
       :root section .section__heading span.section__heading-underline {
         flex-grow: 1;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid #999999;
         margin-bottom: 4px;
         margin-left: 0.3em; }
-    :root section .section__item > div {
-      width: 100%; }
-      :root section .section__item > div:not(:first-child) {
-        margin-top: 0.3em; }
-      :root section .section__item > div > * {
-        display: inline; }
-      :root section .section__item > div > *:last-child {
-        float: right; }
-      :root section .section__item > div .section__subheading {
-        font-weight: 600; }
-      :root section .section__item > div .section__location {
-        color: #DD3D2A;
-        font-size: 0.9em;
-        font-style: italic; }
-      :root section .section__item > div .section__subsubheading {
-        font-size: 0.9em;
-        font-weight: 500;
-        font-variant: small-caps;
-        color: #5D5D5D; }
-      :root section .section__item > div .section__date-range {
-        font-size: 0.9em;
-        font-weight: 500;
-        font-style: italic; }
+    :root section .section__item {
+      margin-bottom: 0.5rem; }
+      :root section .section__item > div {
+        width: 100%; }
+        :root section .section__item > div:not(:first-child) {
+          margin-top: 0.3em; }
+        :root section .section__item > div > * {
+          display: inline; }
+        :root section .section__item > div > *:last-child {
+          float: right; }
+        :root section .section__item > div .section__subheading {
+          font-weight: 600; }
+        :root section .section__item > div .section__location {
+          color: #DD3D2A;
+          font-size: 0.9em;
+          font-style: italic; }
+        :root section .section__item > div .section__subsubheading {
+          font-size: 0.9em;
+          font-weight: 500;
+          font-variant: small-caps;
+          color: #5D5D5D; }
+        :root section .section__item > div .section__date-range {
+          font-size: 0.9em;
+          font-weight: 500;
+          font-style: italic; }
     :root section ul {
       margin-left: 1.1em;
       margin-top: 0.5em;
-      font-size: 0.9em;
-      line-height: 1.3em; }
+      font-size: 0.9rem;
+      line-height: 1.2em; }
+      :root section ul li:not(:last-child) {
+        margin-bottom: 0.2rem; }
+    :root section ul, :root section table {
+      font-size: 0.9rem;
+      color: #333333; }
   :root .skills table tr td:first-child {
     text-align: right;
     font-weight: bold;
+    font-size: 1rem;
     padding-right: 0.8em; }
   :root .skills .skills__list span:not(:last-child)::after {
     content: ', '; }
   :root footer {
+    align-self: flex-end;
+    width: 100%;
     display: flex;
     flex-direction: row;
     font-size: 0.75em;
     font-variant: small-caps;
-    margin-top: 1.5em; }
+    margin-top: auto; }
     :root footer table {
       width: 100%;
       color: #999999; }

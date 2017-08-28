@@ -17,15 +17,15 @@ $bg: #EFEFEF;
     font-weight: 400;
 
     #document {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         background-color: white;
         width: 8.5in;
         height: 11in;
         padding: 0.3in 0.5in;
-        margin: 0 auto;
+        margin: 5vh auto;
         box-shadow: 0 3px 10px 0 rgba(0,0,0,0.3);
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .about-me {
@@ -47,8 +47,9 @@ $bg: #EFEFEF;
 
         .about-me__position {
             color: $awesome-red;
-            font-weight: bold;
+            font-family: 'Source Sans Pro';
             font-variant: small-caps;
+            font-size: 0.9333rem;
         }
 
         .about-me__address {
@@ -81,30 +82,28 @@ $bg: #EFEFEF;
 
     section {
         width: 100%;
-        margin-top: 1em;
+        margin-top: 0.5rem;
         font-family: 'Source Sans Pro';
-
-        .section__item {
-            margin-bottom: 1em;
-        }
 
         .section__heading {
             color: $awesome-red;
             font-weight: 700;
             font-size: 1.4em;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.15em;
             display: flex;
             flex-direction: row;
 
             span.section__heading-underline {
                 flex-grow: 1;
-                border-bottom: 1px solid black;
+                border-bottom: 2px solid $awesome-lightgray;
                 margin-bottom: 4px;
                 margin-left: 0.3em;
             }
         }
 
         .section__item {
+            margin-bottom: 0.5rem;
+            
             & > div {
                 width: 100%;
 
@@ -148,8 +147,17 @@ $bg: #EFEFEF;
         ul {
             margin-left: 1.1em;
             margin-top: 0.5em;
-            font-size: 0.9em;
-            line-height: 1.3em;
+            font-size: 0.9rem;
+            line-height: 1.2em;
+            
+            li:not(:last-child) {
+                margin-bottom: 0.2rem;
+            }
+        }
+        
+        ul, table {
+            font-size: 0.9rem;
+            color: $awesome-darkgray;
         }
     }
 
@@ -157,6 +165,7 @@ $bg: #EFEFEF;
         table tr td:first-child {
             text-align: right;
             font-weight: bold;
+            font-size: 1rem;
             padding-right: 0.8em;
         }
 
@@ -166,11 +175,13 @@ $bg: #EFEFEF;
     }
 
     footer {
+        align-self: flex-end;
+        width: 100%;
         display: flex;
         flex-direction: row;
         font-size: 0.75em;
         font-variant: small-caps;
-        margin-top: 1.5em;
+        margin-top: auto;
 
         table {
             width: 100%;
