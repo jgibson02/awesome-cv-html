@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     webserver = require('gulp-webserver'),
     sass = require('gulp-sass'),
-    mustache = require('gulp-mustache-inverted');
+    mustache = require('gulp-mustache-inverted'),
+    download = require('gulp-download'),
+    moment = require('moment');
 
 var src = './src',
     build = './build';
@@ -24,9 +26,16 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(build + '/css/'));
 });
 
-gulp.task('mustache', function() {
+gulp.task('resume-data', function() {
+    download('http://johngibson.me/resume-data.json')
+	    .pipe(gulp.dest(src + "/"));
+});
+
+gulp.task('mustache', ['resume-data'], function() {
+    let resumeData = require(src + '/resume-data.json');
+    resumeData.date = moment().format('MMMM D, YYYY');
     gulp.src(src + '/**/*.mustache')
-        .pipe(mustache(src + '/data.json', {extension: '.html'}))
+        .pipe(mustache(resumeData, {extension: '.html'}))
         .pipe(gulp.dest(build + '/'));
 });
 
@@ -47,4 +56,4 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['watch', 'html', 'css', 'json', 'sass', 'mustache', 'webserver']);
+gulp.task('default', ['resume-data', 'watch', 'html', 'css', 'json', 'sass', 'mustache', 'webserver']);

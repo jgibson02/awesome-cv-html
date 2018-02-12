@@ -1,17 +1,19 @@
 {
-    "date": "August 13, 2017",
-
     "about-me": {
         "first-name": "John H.",
         "last-name": "Gibson",
-        "address": "Home: 1036 Hemlock Lane, Enola, Pennsylvania 17025<br/>School: 525 East 2nd St., Room 328 Luzerne Hall, Bloomsburg, Pennsylvania 17815",
+        "addresses": {
+            "home": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
+            "school": "525 East 2nd St., Room 328 Luzerne Hall, Bloomsburg, Pennsylvania 17815"
+        },
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
         "email": "jonathangibson02@gmail.com",
-        "website": "johngibson.me",
+        "website": "http://johngibson.me",
         "github": "jgibson02",
         "linkedin": "jgibson02",
-        "position": "Computer Science Student"
+        "position": "Computer Science Student",
+        "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
     },
 
     "committees": [
@@ -20,15 +22,15 @@
 
     "education": [
         {
-            "study": "B.S. in Computer Science | Cum. GPA: 3.53",
+            "study": "B.S. in Computer Science",
+            "gpa": 3.55,
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Exp. May 2019",
+            "active": true,
             "list-items": [
                 "Dean's List: Spring 2016 - Present.",
-                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology.",
-                "Won the November 2016 Department of Mathematics and Digital Sciences Problem Solving Competition.",
-                "Honors program: Performed 16 hours of community service, landscaping and cleaning up for a local daycare, as well as cooking and serving meals for the Catholic Campus Ministry."
+                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
             ]
         }
     ],
@@ -39,40 +41,46 @@
             "institution": "NASA Langley Research Center",
             "location": "Hampton, Virginia",
             "date-range": "Jun. 2017 - Aug. 2017",
+            "span": "3 months",
+            "active": false,
             "list-items": [
-                "Developed a distributable plugin in Java to enable system engineers to track changes to UML diagram projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
-                "Designed and built a React web application to view and comment on the diagrams of the current state of a project, with a build process automated by Gulp.",
+                "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+                "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
                 "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
-                "Taught the use of web technologies and their context in software development to peers and mentors.",
-                "Led major project design overhauls to accurately meet system engineers' needs."
-            ]
+                "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
+            ],
+            "website": "https://www.nasa.gov/centers/langley/home/index.html"
         },
         {
             "title": "Student Living and Learning Community Mentor",
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2016 - Present",
+            "span": "1 year, 4 months",
+            "active": true,
             "list-items": [
                 "Supporting the academic success and wellness of freshmen in the Computer Science program.",
-                "Tutoring in lower level Computer Science and Math subjects.",
+                "Tutoring mentees in Computer Science and Mathematics courses.",
                 "Planning and organizing events for members of the Living and Learning Community.",
-                "Setting up a dedicated server for LLC-related activities including a webserver.",
-                "Building and programming GoPiGo robots with LLC members and faculty directors."
-            ]
+                "Establishing server infrastructure and applications for use by LLC members.",
+                "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
+            ],
+            "website": "https://www.bloomu.edu/"
         }
     ],
 
     "extracurricular": [
         {
             "organization": "Assocation of Computing Machinery",
-            "role": "ACM Member",
+            "role": "ACM Member/Officer",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Present",
+            "active": true,
             "list-items": [
                 "Vice-President, Fall/Spring 2017-2018.",
-                "Learned from topics ranging from self-development to technologies such as AWS, webcrawlers, and the MEAN stack.",
-                "Participated in a student-led project to construct a system of GPS trackers with the purpose of building a cross-platform app to track campus shuttle buses.",
-                "Competitor for programming competition team, placed 4th at PACISE 2017."
+                "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
+                "Leading a student project to construct a system of GPS trackers and cross-platform application for locating campus shuttle buses.",
+                "Competitor for BU's ACM student chapter programming competition team."
             ]
         },
         {
@@ -80,8 +88,9 @@
             "role": "Volunteer Tutor",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Sep. 2016 - Present",
+            "active": true,
             "list-items": [
-                "Provided tutorial services for 3-4 hours a week in freshmen-level Computer Science and Math courses."
+                "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
             ]
         }
     ],
@@ -106,9 +115,8 @@
         {
             "heading": "Interpreted Languages",
             "list-items": [
-                "JavaScript",
-                "Python",
-                "LaTeX"
+                "JavaScript (ES6)",
+                "Python"
             ]
         },
         {
@@ -116,7 +124,8 @@
             "list-items": [
                 "React.js",
                 "jQuery",
-                "AngularJS",
+                "Node.js",
+                "Express.js",
                 "Bootstrap",
                 "Webpack/Gulp+Browserify"
             ]
@@ -124,8 +133,8 @@
         {
             "heading": "Data",
             "list-items": [
-                "Oracle SQL",
                 "MongoDB",
+                "SQL",
                 "Firebase",
                 "JSON",
                 "XML"
@@ -136,6 +145,7 @@
             "list-items": [
                 "Git",
                 "Assembly (x86 Intel, MIPS)",
+                "LaTeX",
                 "HTML5&CSS3"
             ]
         }
