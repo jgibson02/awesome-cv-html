@@ -2,7 +2,7 @@
 <head>
     <title>Resume of John Gibson</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
@@ -11,44 +11,18 @@
         {{#about-me}}
             <h1 class="about-me__name">{{first-name}} <span class="about-me__last-name">{{last-name}}</span></h1>
             <h6 class="about-me__position">{{position}}</h6>
-            <h6 class="about-me__address">
-                Home: {{about-me.addresses.home}}
-                <br/> 
-                School: {{about-me.addresses.school}}
-            </h6>
+            <h6 class="about-me__address">{{address}}</h6>
             <span class="about-me__social">
                 <h6><a href="tel:{{mobile}}"><i class="fa fa-phone"></i>{{mobile-display}}</a></h6>
                 <h6><a href="mailto:{{email}}"><i class="fa fa-envelope"></i>{{email}}</a></h6>
                 <h6><a href="{{website}}"><i class="fa fa-home"></i>{{website}}</a></h6>
-                <h6><a href="https://www.github.com/{{github}}"><i class="fa fa-github-alt"></i>{{github}}</a></h6>
-                <h6><a href="https://www.linkedin.com/in/{{linkedin}}"><i class="fa fa-linkedin-square"></i>{{linkedin}}</a></h6>
+                <h6><a href="https://www.github.com/{{github}}"><i class="fab fa-github-alt"></i>{{github}}</a></h6>
+                <h6><a href="https://www.linkedin.com/in/{{linkedin}}"><i class="fab fa-linkedin"></i>{{linkedin}}</a></h6>
+                <h6><a href="https://www.medium.com/@{{linkedin}}"><i class="fab fa-medium"></i>{{medium}}</a></h6>
             </span>
         {{/about-me}}
     </header>
-    <section class="education">
-        <div class="section__heading">
-            <h1>Education</h1>
-            <span class="section__heading-underline"></span>
-        </div>
-        {{#education}}
-        <div class="section__item">
-            <div>
-                <h4 class="education__institution section__subheading">{{institution}}</h4>
-                <h4 class="section__location">{{location}}</h4>
-            </div>
-            <div>
-                <h5 class="section__subsubheading">{{study}} | Cum. GPA: {{gpa}}</h5>
-                <h5 class="section__date-range">{{date-range}}</h5>
-            </div>
-            <ul>
-                {{#list-items}}
-                <li>{{.}}</li>
-                {{/list-items}}
-            </ul>
-        </div>
-        {{/education}}
-    </section>
-
+    
     <section class="experience">
         <div class="section__heading">
             <h1>Experience</h1>
@@ -71,6 +45,30 @@
                 </ul>
             </div>
         {{/experience}}
+    </section>
+    
+    <section class="education">
+        <div class="section__heading">
+            <h1>Education</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        {{#education}}
+        <div class="section__item">
+            <div>
+                <h4 class="education__institution section__subheading">{{institution}}</h4>
+                <h4 class="section__location">{{location}}</h4>
+            </div>
+            <div>
+                <h5 class="section__subsubheading">{{study}} | Cum. GPA: {{gpa}}</h5>
+                <h5 class="section__date-range">{{date-range}}</h5>
+            </div>
+            <ul>
+                {{#list-items}}
+                <li>{{.}}</li>
+                {{/list-items}}
+            </ul>
+        </div>
+        {{/education}}
     </section>
 
     <section class="extracurricular">
@@ -96,7 +94,7 @@
             </div>
         {{/extracurricular}}
     </section>
-
+    
     <section class="skills">
         <div class="section__heading">
             <h1>Skills</h1>

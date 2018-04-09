@@ -2,13 +2,10 @@
     "about-me": {
         "first-name": "John H.",
         "last-name": "Gibson",
-        "addresses": {
-            "home": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
-            "school": "525 East 2nd St., Room 328 Luzerne Hall, Bloomsburg, Pennsylvania 17815"
-        },
+        "address": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
-        "email": "jonathangibson02@gmail.com",
+        "email": "career.johngibson@gmail.com",
         "website": "http://johngibson.me",
         "github": "jgibson02",
         "linkedin": "jgibson02",

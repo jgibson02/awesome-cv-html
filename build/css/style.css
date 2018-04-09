@@ -65,9 +65,9 @@ table {
       :root .about-me .about-me__social > h6 a {
         text-decoration: none;
         color: black; }
-        :root .about-me .about-me__social > h6 a i.fa {
+        :root .about-me .about-me__social > h6 a > svg {
           margin-right: 0.4em; }
-      :root .about-me .about-me__social > h6::after {
+      :root .about-me .about-me__social > h6:not(:last-child)::after {
         content: '|';
         margin-left: 0.75em;
         margin-right: 0.5em; }
@@ -116,7 +116,7 @@ table {
       margin-left: 1.1rem;
       margin-top: 0.5rem;
       font-size: 0.9rem;
-      line-height: 1.2em; }
+      line-height: 1.1em; }
       :root section ul li {
         font-size: 0.9rem; }
       :root section ul li:not(:last-child) {

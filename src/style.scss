@@ -66,12 +66,12 @@ $bg: #EFEFEF;
                     text-decoration: none;
                     color: black;
 
-                    i.fa {
+                    & > svg {
                         margin-right: 0.4em;
                     }
                 }
 
-                &::after {
+                &:not(:last-child)::after {
                     content: '|';
                     margin-left: 0.75em;
                     margin-right:0.5em;
@@ -148,7 +148,7 @@ $bg: #EFEFEF;
             margin-left: 1.1rem;
             margin-top: 0.5rem;
             font-size: 0.9rem;
-            line-height: 1.2em;
+            line-height: 1.1em;
             
             li {
                 font-size: 0.9rem;

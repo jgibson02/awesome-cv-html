@@ -40,11 +40,10 @@ gulp.task('mustache', ['resume-data'], function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(build + '/**/*.html', ['html']);
-    gulp.watch(build + '/**/*.css', ['css']);
-    gulp.watch(src + '/**/*.json', ['json', 'mustache']);
-    gulp.watch(src + '/**/*.scss', ['sass']);
     gulp.watch(src + '/**/*.mustache', ['mustache']);
+    gulp.watch(src + '/**/*.json', ['json', 'mustache']);
+    gulp.watch(build + '/**/*.css', ['css']);
+    gulp.watch(src + '/**/*.scss', ['sass']);
 });
 
 gulp.task('webserver', function() {
