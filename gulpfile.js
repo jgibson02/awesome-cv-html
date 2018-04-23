@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     mustache = require('gulp-mustache-inverted'),
     download = require('gulp-download'),
-    moment = require('moment');
+    moment = require('moment'),
+    fs = require('fs');
 
 var src = './src',
     build = './build';
@@ -16,23 +17,14 @@ gulp.task('css', function() {
     gulp.src(build + '/**/*.css');
 });
 
-gulp.task('json', function() {
-    gulp.src(src + '/**/*.json');
-});
-
 gulp.task('sass', function() {
     gulp.src(src + '/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(build + '/css/'));
 });
 
-gulp.task('resume-data', function() {
-    download('http://johngibson.me/resume-data.json')
-	    .pipe(gulp.dest(src + "/"));
-});
-
-gulp.task('mustache', ['resume-data'], function() {
-    let resumeData = require(src + '/resume-data.json');
+gulp.task('mustache', function() {
+    let resumeData = JSON.parse(fs.readFileSync(src + '/resume-data.json', "utf8"));
     resumeData.date = moment().format('MMMM D, YYYY');
     gulp.src(src + '/**/*.mustache')
         .pipe(mustache(resumeData, {extension: '.html'}))
@@ -41,7 +33,7 @@ gulp.task('mustache', ['resume-data'], function() {
 
 gulp.task('watch', function() {
     gulp.watch(src + '/**/*.mustache', ['mustache']);
-    gulp.watch(src + '/**/*.json', ['json', 'mustache']);
+    gulp.watch(src + '/**/*.json', ['mustache']);
     gulp.watch(build + '/**/*.css', ['css']);
     gulp.watch(src + '/**/*.scss', ['sass']);
 });
@@ -55,4 +47,4 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['resume-data', 'watch', 'html', 'css', 'json', 'sass', 'mustache', 'webserver']);
+gulp.task('default', ['watch', 'html', 'css', 'sass', 'mustache', 'webserver']);

@@ -129,6 +129,8 @@ table {
     font-weight: bold;
     font-size: 1rem;
     padding-right: 0.8em; }
+  :root .skills table tr {
+    line-height: 1.3em; }
   :root .skills .skills__list span:not(:last-child)::after {
     content: ', '; }
   :root footer {

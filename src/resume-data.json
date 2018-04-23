@@ -2,13 +2,14 @@
     "about-me": {
         "first-name": "John H.",
         "last-name": "Gibson",
-        "address": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
+        "location": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
         "email": "career.johngibson@gmail.com",
         "website": "http://johngibson.me",
         "github": "jgibson02",
         "linkedin": "jgibson02",
+        "medium": "jgibson02",
         "position": "Computer Science Student",
         "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
     },

@@ -95,7 +95,7 @@ $bg: #EFEFEF;
 
             span.section__heading-underline {
                 flex-grow: 1;
-                border-bottom: 2px solid $awesome-lightgray;
+                border-bottom: 2px solid opacify($awesome-lightgray, 0.7);
                 margin-bottom: 4px;
                 margin-left: 0.3em;
             }
@@ -171,6 +171,10 @@ $bg: #EFEFEF;
             font-weight: bold;
             font-size: 1rem;
             padding-right: 0.8em;
+        }
+        
+        table tr {
+            line-height: 1.3em;
         }
 
         .skills__list span:not(:last-child)::after {
