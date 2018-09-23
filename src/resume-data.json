@@ -1,0 +1,165 @@
+{
+    "about-me": {
+        "first-name": "John H.",
+        "last-name": "Gibson",
+        "location": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
+        "mobile": "17178776438",
+        "mobile-display": "(717) 877-6438",
+        "email": "career.johngibson@gmail.com",
+        "website": "http://johngibson.me",
+        "github": "jgibson02",
+        "linkedin": "jgibson02",
+        "medium": "jgibson02",
+        "codepen": "jgibson02",
+        "position": "Computer Science Student",
+        "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
+    },
+
+    "committees": [
+        
+    ],
+
+    "education": [
+        {
+            "study": "B.S. in Computer Science",
+            "gpa": 3.59,
+            "institution": "Bloomsburg University of Pennsylvania",
+            "location": "Bloomsburg, Pennsylvania",
+            "date-range": "Aug. 2015 - Exp. May 2019",
+            "active": true,
+            "list-items": [
+                "Dean's List: Spring 2016 - Present.",
+                "Currently conducting an independent study project to build a system of trackers for campus shuttle buses, and a Progressive Web Application for users to see bus locations and ETAs.",
+                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
+            ]
+        }
+    ],
+
+    "experience": [
+        {
+            "title": "Applications Development Intern",
+            "institution": "Qurate Retail Group",
+            "location": "West Chester, Pennsylvania",
+            "date-range": "Jun. 2018 - Aug. 2018",
+            "span": "3 months",
+            "active": false,
+            "list-items": [
+                "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+                "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+                "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+                "Built the MDM web application, first in React, then ported to Angular 6.",
+                "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+            ],
+            "website": "https://www.nasa.gov/centers/langley/home/index.html"
+        },
+        {
+            "title": "Software Engineering Intern",
+            "institution": "NASA Langley Research Center",
+            "location": "Hampton, Virginia",
+            "date-range": "Jun. 2017 - Aug. 2017",
+            "span": "3 months",
+            "active": false,
+            "list-items": [
+                "Developed Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+                "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
+                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML.",
+                "Led project design assessments as user stories changed."
+            ],
+            "website": "https://www.nasa.gov/centers/langley/home/index.html"
+        },
+        {
+            "title": "Student Living and Learning Community Mentor",
+            "institution": "Bloomsburg University of Pennsylvania",
+            "location": "Bloomsburg, Pennsylvania",
+            "date-range": "Aug. 2016 - Present",
+            "span": "2 years, 1 month",
+            "active": true,
+            "list-items": [
+                "Supporting the wellness of freshmen in the Computer Science program, including 1-1 check-ins, tutoring, and advisement.",
+                "Tutoring mentees in Computer Science and Mathematics courses.",
+                "Planning and organizing events for members of the Living and Learning Community.",
+                "Building and programming GoPiGo robots using Python with LLC members and faculty directors."
+            ],
+            "website": "https://www.bloomu.edu/"
+        }
+    ],
+
+    "extracurricular": [
+        {
+            "organization": "Assocation of Computing Machinery",
+            "role": "ACM Member/Officer",
+            "location": "Bloomsburg, Pennsylvania",
+            "date-range": "Aug. 2015 - Present",
+            "active": true,
+            "list-items": [
+                "Vice-President, Fall/Spring 2017-2018.",
+                "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
+                "Competitor for BU's ACM student chapter programming competition team.",
+                "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
+            ]
+        }
+    ],
+
+    "honors": [
+
+    ],
+
+    "presentations": [
+
+    ],
+
+    "skills": [
+        {
+            "heading": "Compiled Languages",
+            "list-items": [
+                "Java (Networking, Databases, JSP/Servlets)",
+                "C",
+                "C++"
+            ]
+        },
+        {
+            "heading": "Interpreted Languages",
+            "list-items": [
+                "JavaScript (ES6)",
+                "TypeScript",
+                "Python"
+            ]
+        },
+        {
+            "heading": "Frameworks",
+            "list-items": [
+                "React",
+                "Angular",
+                "SASS",
+                "Node.js",
+                "jQuery",
+                "Express.js",
+                "Bootstrap",
+                "Webpack/Gulp+Browserify"
+            ]
+        },
+        {
+            "heading": "Data",
+            "list-items": [
+                "MongoDB",
+                "SQL",
+                "Firebase",
+                "JSON",
+                "XML"
+            ]
+        },
+        {
+            "heading": "Other",
+            "list-items": [
+                "Git & SVN",
+                "LaTeX",
+                "HTML5&CSS3",
+                "BEM+SMACSS Methodologies"
+            ]
+        }
+    ],
+
+    "writing": [
+
+    ]
+}
