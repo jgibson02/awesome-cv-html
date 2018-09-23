@@ -9,14 +9,15 @@
 <body>
     <div id="document">
     <header class="about-me">
-        
-            <h1 class="about-me__name">{{first-name}} <span class="about-me__last-name">{{last-name}}</span></h1>
-            <h6 class="about-me__position">{{position}}</h6>
-            <h6 class="about-me__address">{{location}}</h6>
-            <span class="about-me__social">
-                <h6><a href="tel:{{mobile}}"><i class="fa fa-phone"></i>{{mobile-display}}</a></h6>
-                <h6><a href="mailto:{{email}}"><i class="fa fa-envelope"></i>{{email}}</a></h6>
-            </span>
+        <h1 class="about-me__name">{{first-name}} <span class="about-me__last-name">{{last-name}}</span></h1>
+        <h6 class="about-me__position">{{position}}</h6>
+        <h6 class="about-me__address">{{location}}</h6>
+        <span class="about-me__social">
+            <h6><a href="tel:{{mobile}}"><i class="fa fa-phone"></i>{{mobile-display}}</a></h6>
+            <h6><a href="mailto:{{email}}"><i class="fa fa-envelope"></i>{{email}}</a></h6>
+            <h6><a href="https://github.com/{{github}}"><i class="fab fa-github"></i>{{github}}</a></h6>
+            <h6><a href="https://codepen.io/{{codepen}}"><i class="fab fa-codepen"></i>{{codepen}}</a></h6>
+        </span>
     </header>
     {{/about-me}}
     

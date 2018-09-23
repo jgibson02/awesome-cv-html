@@ -10,6 +10,7 @@
         "github": "jgibson02",
         "linkedin": "jgibson02",
         "medium": "jgibson02",
+        "codepen": "jgibson02",
         "position": "Computer Science Student",
         "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
     },
@@ -21,19 +22,36 @@
     "education": [
         {
             "study": "B.S. in Computer Science",
-            "gpa": 3.55,
+            "gpa": 3.59,
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Exp. May 2019",
             "active": true,
             "list-items": [
                 "Dean's List: Spring 2016 - Present.",
+                "Currently conducting an independent study project to build a system of trackers for campus shuttle buses, and a Progressive Web Application for users to see bus locations and ETAs.",
                 "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
             ]
         }
     ],
 
     "experience": [
+        {
+            "title": "Applications Development Intern",
+            "institution": "Qurate Retail Group",
+            "location": "West Chester, Pennsylvania",
+            "date-range": "Jun. 2018 - Aug. 2018",
+            "span": "3 months",
+            "active": false,
+            "list-items": [
+                "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+                "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+                "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+                "Built the MDM web application, first in React, then ported to Angular 6.",
+                "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+            ],
+            "website": "https://www.nasa.gov/centers/langley/home/index.html"
+        },
         {
             "title": "Software Engineering Intern",
             "institution": "NASA Langley Research Center",
@@ -42,10 +60,10 @@
             "span": "3 months",
             "active": false,
             "list-items": [
-                "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+                "Developed Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
                 "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
-                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
-                "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
+                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML.",
+                "Led project design assessments as user stories changed."
             ],
             "website": "https://www.nasa.gov/centers/langley/home/index.html"
         },
@@ -54,14 +72,13 @@
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2016 - Present",
-            "span": "1 year, 4 months",
+            "span": "2 years, 1 month",
             "active": true,
             "list-items": [
-                "Supporting the academic success and wellness of freshmen in the Computer Science program.",
+                "Supporting the wellness of freshmen in the Computer Science program, including 1-1 check-ins, tutoring, and advisement.",
                 "Tutoring mentees in Computer Science and Mathematics courses.",
                 "Planning and organizing events for members of the Living and Learning Community.",
-                "Establishing server infrastructure and applications for use by LLC members.",
-                "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
+                "Building and programming GoPiGo robots using Python with LLC members and faculty directors."
             ],
             "website": "https://www.bloomu.edu/"
         }
@@ -77,17 +94,7 @@
             "list-items": [
                 "Vice-President, Fall/Spring 2017-2018.",
                 "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
-                "Leading a student project to construct a system of GPS trackers and cross-platform application for locating campus shuttle buses.",
-                "Competitor for BU's ACM student chapter programming competition team."
-            ]
-        },
-        {
-            "organization": "Bloomsburg University Department of Mathematics and Digital Sciences",
-            "role": "Volunteer Tutor",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Sep. 2016 - Present",
-            "active": true,
-            "list-items": [
+                "Competitor for BU's ACM student chapter programming competition team.",
                 "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
             ]
         }
@@ -114,15 +121,18 @@
             "heading": "Interpreted Languages",
             "list-items": [
                 "JavaScript (ES6)",
+                "TypeScript",
                 "Python"
             ]
         },
         {
-            "heading": "Platforms",
+            "heading": "Frameworks",
             "list-items": [
-                "React.js",
-                "jQuery",
+                "React",
+                "Angular",
+                "SASS",
                 "Node.js",
+                "jQuery",
                 "Express.js",
                 "Bootstrap",
                 "Webpack/Gulp+Browserify"
@@ -141,10 +151,10 @@
         {
             "heading": "Other",
             "list-items": [
-                "Git",
-                "Assembly (x86 Intel, MIPS)",
+                "Git & SVN",
                 "LaTeX",
-                "HTML5&CSS3"
+                "HTML5&CSS3",
+                "BEM+SMACSS Methodologies"
             ]
         }
     ],
