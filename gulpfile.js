@@ -8,42 +8,48 @@ const fs = require('fs');
 const src = './src';
 const build = './build';
 
-gulp.task('html', () => {
+gulp.task('html', (done) => {
   gulp.src(`${build}/**/*.html`);
+  done();
 });
 
-gulp.task('css', () => {
+gulp.task('css', (done) => {
   gulp.src(`${build}/**/*.css`);
+  done();
 });
 
-gulp.task('sass', () => {
+gulp.task('sass', (done) => {
   gulp.src(`${src}/**/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(`${build}/css/`));
+  done();
 });
 
-gulp.task('mustache', () => {
+gulp.task('mustache', (done) => {
   const resumeData = JSON.parse(fs.readFileSync(`${src}/resume-data.json`, 'utf8'));
   resumeData.date = moment().format('MMMM D, YYYY');
   gulp.src(`${src}/**/*.mustache`)
     .pipe(mustache(resumeData, { extension: '.html' }))
     .pipe(gulp.dest(`${build}/`));
+  done();
 });
 
-gulp.task('watch', () => {
-  gulp.watch(`${src}/**/*.mustache`, ['mustache']);
-  gulp.watch(`${src}/**/*.json`, ['mustache']);
-  gulp.watch(`${build}/**/*.css`, ['css']);
-  gulp.watch(`${src}/**/*.scss`, ['sass']);
+gulp.task('watch', function (done) {
+  gulp.watch(`${src}/**/*.mustache`, gulp.series('mustache'));
+  gulp.watch(`${src}/**/*.json`, gulp.series('mustache'));
+  gulp.watch(`${build}/**/*.css`, gulp.series('css'));
+  gulp.watch(`${src}/**/*.scss`, gulp.series('sass'));
+  done();
 });
 
-gulp.task('webserver', () => {
+gulp.task('webserver', (done) => {
   gulp.src(`${build}/`)
     .pipe(webserver({
       livereload: true,
       open: true,
       port: 8081,
     }));
+  done();
 });
 
-gulp.task('default', ['watch', 'html', 'css', 'sass', 'mustache', 'webserver']);
+gulp.task('default', gulp.parallel(['watch', 'html', 'css', 'sass', 'mustache', 'webserver']), function () { });

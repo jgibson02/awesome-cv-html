@@ -9,12 +9,12 @@
   "author": "John Gibson",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-download": "0.0.1",
     "gulp-mustache-inverted": "^2.3.0",
     "gulp-sass": "^3.2.1",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.11.0",
     "sass-loader": "^6.0.6"
   },
   "dependencies": {
