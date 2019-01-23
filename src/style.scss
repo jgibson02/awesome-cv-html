@@ -12,9 +12,9 @@ $awesome-darkgray: #333333;
 $bg: #EFEFEF;
 
 :root {
-    background-color: $bg;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  background-color: $bg;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -28,11 +28,22 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
-  width: 8.5in;
-  height: 11in;
-  padding: 0.5in 0.7in;
   margin: auto;
   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.3);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 10in;
+  width: 7.1in;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.page-break {
+  display: none;
 }
 
 .about-me {
@@ -53,16 +64,17 @@ body {
   }
 
   .about-me__position {
-      color: $color-primary;
-      font-family: 'Source Sans Pro';
-      font-variant: small-caps;
-      font-size: 0.9333rem;
+    margin-top: 0.5em;
+    color: $color-primary;
+    font-family: 'Source Sans Pro';
+    font-variant: small-caps;
+    font-size: 0.9333rem;
   }
 
   .about-me__address {
-      font-weight: 500;
-      font-style: italic;
-      color: $awesome-lightgray;
+    font-weight: 500;
+    font-style: italic;
+    color: $awesome-lightgray;
   }
 
   .about-me__social {
@@ -96,7 +108,7 @@ section {
       color: $color-primary;
       font-weight: 700;
       font-size: 1.4rem;
-      margin-bottom: 0.15em;
+      margin-bottom: 0.7em;
       display: flex;
       flex-direction: row;
 
@@ -174,6 +186,7 @@ section {
 
 .skills {
   table tr td:first-child {
+    width: 11em;
       text-align: right;
       font-weight: bold;
       font-size: 1rem;
@@ -190,33 +203,38 @@ section {
 }
 
 footer {
-  align-self: flex-end;
-  width: 100%;
+  margin-top: auto;
+  position: relative;
+  top: 1em;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-size: 0.75em;
   font-variant: small-caps;
-  margin-top: auto;
-
-  table {
-      width: 100%;
-      color: $awesome-lightgray;
-
-      td {
-          flex-grow: 1;
-      }
-  }
 }
 
 @media print {
-    :root #document {
-        top: initial;
-        bottom: initial;
-        transform: none;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        box-shadow: none;
-    }
+  body {
+    overflow: visible;
+  }
+
+  :root #document {
+    float: none;
+    display: block;
+    width: unset;
+    height: unset;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .page-break	{ 
+    display: block;
+    page-break-before: always;
+    flex: 1;
+  }
+
+  @page {
+    size: letter portrait;
+    margin: 0.5in 0.7in;
+  }
 }

@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-    <div id="document">
-    <header class="about-me">
+  <div id="document">
+    <div class="page">
+      <header class="about-me">
         <h1 class="about-me__name">{{first-name}} <span class="about-me__last-name">{{last-name}}</span></h1>
         <h6 class="about-me__position">{{position}}</h6>
         <h6 class="about-me__address">{{location}}</h6>
@@ -18,46 +19,119 @@
             <h6><a href="https://github.com/{{github}}"><i class="fab fa-github"></i>{{github}}</a></h6>
             <h6><a href="https://codepen.io/{{codepen}}"><i class="fab fa-codepen"></i>{{codepen}}</a></h6>
         </span>
-    </header>
-    {{/about-me}}
-    
-    <section class="experience">
+      </header>
+      {{/about-me}}
+      
+      <section class="experience">
+          <div class="section__heading">
+              <h1>Experience</h1>
+              <span class="section__heading-underline"></span>
+          </div>
+          {{#experience}}
+            <div class="section__item">
+              <div>
+                  <h4 class="education__institution section__subheading">{{institution}}</h4>
+                  <h4 class="section__location">{{location}}</h4>
+              </div>
+              <div>
+                  <h5 class="section__subsubheading">{{title}}</h5>
+                  <h5 class="section__date-range">{{date-range}}</h5>
+              </div>
+              <ul>
+                  {{#list-items}}
+                  <li>{{.}}</li>
+                  {{/list-items}}
+              </ul>
+            </div>
+          {{/experience}}
+      </section>
+      
+      <section class="skills">
         <div class="section__heading">
-            <h1>Experience</h1>
+            <h1>Skills</h1>
             <span class="section__heading-underline"></span>
         </div>
-        {{#experience}}
-            <div class="section__item">
-                <div>
-                    <h4 class="education__institution section__subheading">{{institution}}</h4>
-                    <h4 class="section__location">{{location}}</h4>
-                </div>
-                <div>
-                    <h5 class="section__subsubheading">{{title}}</h5>
-                    <h5 class="section__date-range">{{date-range}}</h5>
-                </div>
-                <ul>
-                    {{#list-items}}
-                    <li>{{.}}</li>
-                    {{/list-items}}
-                </ul>
-            </div>
-        {{/experience}}
-    </section>
-    
-    <section class="education">
+        <table>
+        {{#skills}}
+          <tr>
+              <td class="skills__heading">{{heading}}</td>
+              <td class="skills__list">{{#list-items}} <span>{{.}}</span> {{/list-items}}</td>
+          </tr>
+        {{/skills}}
+        </table>
+      </section>
+
+      <footer>
+        <span class="footer__date">{{date}}</span>
+        <span class="footer__text">{{about-me.first-name}} {{about-me.last-name}} · Résumé</span>
+        <span class="footer__pageNum">1</span>
+      </footer>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="page">
+      <section class="education">
         <div class="section__heading">
-            <h1>Education</h1>
-            <span class="section__heading-underline"></span>
+          <h1>Education</h1>
+          <span class="section__heading-underline"></span>
         </div>
         {{#education}}
         <div class="section__item">
+          <div>
+            <h4 class="education__institution section__subheading">{{institution}}</h4>
+            <h4 class="section__location">{{location}}</h4>
+          </div>
+          <div>
+            <h5 class="section__subsubheading">{{study}} | Cum. GPA: {{gpa}}</h5>
+            <h5 class="section__date-range">{{date-range}}</h5>
+          </div>
+          <ul>
+            {{#list-items}}
+            <li>{{.}}</li>
+            {{/list-items}}
+          </ul>
+        </div>
+        {{/education}}
+      </section>
+
+      <section class="projects">
+          <div class="section__heading">
+              <h1>Projects</h1>
+              <span class="section__heading-underline"></span>
+          </div>
+          {{#projects}}
+            <div class="section__item">
+              <div>
+                <h4 class="project__title section__subheading">{{title}}</h4>
+                <h4 class="section__location">{{url}}</h4>
+              </div>
+              <div>
+                <h5 class="section__subsubheading">{{description}}</h5> 
+                <h5 class="section__date-range">{{date-range}}</h5>
+              </div>
+              <ul>
+                {{#list-items}}
+                <li>{{.}}</li>
+                {{/list-items}}
+              </ul>
+            </div>
+          {{/projects}}
+      </section>
+
+      <section class="extracurricular">
+        <div class="section__heading">
+            <h1>Extracurricular Activity</h1>
+            <span class="section__heading-underline"></span>
+        </div>
+        {{#extracurricular}}
+          <div class="section__item">
             <div>
-                <h4 class="education__institution section__subheading">{{institution}}</h4>
+                <h4 class="education__institution section__subheading">{{role}}</h4>
                 <h4 class="section__location">{{location}}</h4>
             </div>
             <div>
-                <h5 class="section__subsubheading">{{study}} | Cum. GPA: {{gpa}}</h5>
+                <h5 class="section__subsubheading">{{organization}}</h5>
                 <h5 class="section__date-range">{{date-range}}</h5>
             </div>
             <ul>
@@ -65,56 +139,16 @@
                 <li>{{.}}</li>
                 {{/list-items}}
             </ul>
-        </div>
-        {{/education}}
-    </section>
-
-    <section class="extracurricular">
-        <div class="section__heading">
-            <h1>Extracurricular Activity</h1>
-            <span class="section__heading-underline"></span>
-        </div>
-        {{#extracurricular}}
-            <div class="section__item">
-                <div>
-                    <h4 class="education__institution section__subheading">{{role}}</h4>
-                    <h4 class="section__location">{{location}}</h4>
-                </div>
-                <div>
-                    <h5 class="section__subsubheading">{{organization}}</h5>
-                    <h5 class="section__date-range">{{date-range}}</h5>
-                </div>
-                <ul>
-                    {{#list-items}}
-                    <li>{{.}}</li>
-                    {{/list-items}}
-                </ul>
-            </div>
+          </div>
         {{/extracurricular}}
-    </section>
-    
-    <section class="skills">
-        <div class="section__heading">
-            <h1>Skills</h1>
-            <span class="section__heading-underline"></span>
-        </div>
-        <table>
-        {{#skills}}
-            <tr>
-                <td class="skills__heading">{{heading}}</td>
-                <td class="skills__list">{{#list-items}} <span>{{.}}</span> {{/list-items}}</td>
-            </tr>
-        {{/skills}}
-        </table>
-    </section>
+      </section>
 
-    <footer>
-        <table>
-            <td class="footer__date">{{date}}</td>
-            <td class="footer__text">{{about-me.first-name}} {{about-me.last-name}} · Résumé</td>
-            <td class="footer__filler"></td>
-        </table>
-    </footer>
+      <footer>
+        <span class="footer__date">{{date}}</span>
+        <span class="footer__text">{{about-me.first-name}} {{about-me.last-name}} · Résumé</span>
+        <span class="footer__pageNum">2</span>
+      </footer>
     </div>
+  </div>
 </body>
 </html>

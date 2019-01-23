@@ -5,8 +5,8 @@
         "location": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
         "mobile": "17178776438",
         "mobile-display": "(717) 877-6438",
-        "email": "career.johngibson@gmail.com",
-        "website": "http://johngibson.me",
+        "email": "career@johngibson.me",
+        "website": "https://johngibson.me",
         "github": "jgibson02",
         "linkedin": "jgibson02",
         "medium": "jgibson02",
@@ -22,82 +22,118 @@
     "education": [
         {
             "study": "B.S. in Computer Science",
-            "gpa": 3.59,
+            "gpa": 3.65,
             "institution": "Bloomsburg University of Pennsylvania",
             "location": "Bloomsburg, Pennsylvania",
             "date-range": "Aug. 2015 - Exp. May 2019",
             "active": true,
             "list-items": [
-                "Dean's List: Spring 2016 - Present.",
-                "Currently conducting an independent study project to build a system of trackers for campus shuttle buses, and a Progressive Web Application for users to see bus locations and ETAs.",
-                "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
+              "Dean's List: Spring 2016 - Present.",
+              "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
             ]
-        }
+        },
+        {
+          "study": "Polish Language and Culture",
+          "institution": "Jagiellonian University",
+          "location": "Kraków, Poland",
+          "date-range": "Winter Semester 2017-18, 2018-19",
+          "active": true,
+          "list-items": [
+            "Coursework in International Relations, Central and Eastern European Film & Literature, European Jewish Experiences, & Post-Communist Transformations.",
+            "Served as a mentor for other students within the study abroad program & guided them through various cities."
+          ]
+      }
     ],
 
     "experience": [
-        {
-            "title": "Applications Development Intern",
-            "institution": "Qurate Retail Group",
-            "location": "West Chester, Pennsylvania",
-            "date-range": "Jun. 2018 - Aug. 2018",
-            "span": "3 months",
-            "active": false,
-            "list-items": [
-                "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
-                "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
-                "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
-                "Built the MDM web application, first in React, then ported to Angular 6.",
-                "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
-            ],
-            "website": "https://www.nasa.gov/centers/langley/home/index.html"
-        },
-        {
-            "title": "Software Engineering Intern",
-            "institution": "NASA Langley Research Center",
-            "location": "Hampton, Virginia",
-            "date-range": "Jun. 2017 - Aug. 2017",
-            "span": "3 months",
-            "active": false,
-            "list-items": [
-                "Developed Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
-                "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
-                "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML.",
-                "Led project design assessments as user stories changed."
-            ],
-            "website": "https://www.nasa.gov/centers/langley/home/index.html"
-        },
-        {
-            "title": "Student Living and Learning Community Mentor",
-            "institution": "Bloomsburg University of Pennsylvania",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Aug. 2016 - Present",
-            "span": "2 years, 1 month",
-            "active": true,
-            "list-items": [
-                "Supporting the wellness of freshmen in the Computer Science program, including 1-1 check-ins, tutoring, and advisement.",
-                "Tutoring mentees in Computer Science and Mathematics courses.",
-                "Planning and organizing events for members of the Living and Learning Community.",
-                "Building and programming GoPiGo robots using Python with LLC members and faculty directors."
-            ],
-            "website": "https://www.bloomu.edu/"
-        }
+      {
+        "title": "GIS Intern",
+        "institution": "Columbia County GIS",
+        "location": "Bloomsburg, Pennsylvania",
+        "date-range": "Jan. 2019 - Present",
+        "span": "1 month",
+        "active": true,
+        "list-items": [
+          "Completion of comprehensive GIS curriculum consisting of necessary geospatial skills.",
+          "Assisting the director of the county GIS office with current data maintenance workflows.",
+          "Examining workflows where automation can assist in improving productivity and reducing error."
+        ],
+        "website": "http://http://gis.columbiapa.org/"
+      },
+      {
+          "title": "Applications Development Intern",
+          "institution": "Qurate Retail Group",
+          "location": "West Chester, Pennsylvania",
+          "date-range": "Jun. 2018 - Aug. 2018",
+          "span": "3 months",
+          "active": false,
+          "list-items": [
+              "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+              "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+              "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+              "Built the MDM web application, first in React, then ported to Angular 6.",
+              "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+          ],
+          "website": "https://www.nasa.gov/centers/langley/home/index.html"
+      },
+      {
+          "title": "Software Engineering Intern",
+          "institution": "NASA Langley Research Center",
+          "location": "Hampton, Virginia",
+          "date-range": "Jun. 2017 - Aug. 2017",
+          "span": "3 months",
+          "active": false,
+          "list-items": [
+              "Developed Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+              "Designed and built a React webapp to view, comment, and track the diagrams of a project in its present state.",
+              "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML.",
+              "Led project design assessments as user stories changed."
+          ],
+          "website": "https://www.nasa.gov/centers/langley/home/index.html"
+      },
+      {
+          "title": "Student Living and Learning Community Mentor",
+          "institution": "Bloomsburg University of Pennsylvania",
+          "location": "Bloomsburg, Pennsylvania",
+          "date-range": "Aug. 2016 - Present",
+          "span": "2 years, 1 month",
+          "active": true,
+          "list-items": [
+              "Supporting the wellness of freshmen in the Computer Science program, including 1-1 check-ins, tutoring, and advisement.",
+              "Tutoring mentees in Computer Science and Mathematics courses.",
+              "Planning and organizing events for members of the Living and Learning Community.",
+              "Building and programming GoPiGo robots using Python with LLC members and faculty directors."
+          ],
+          "website": "https://www.bloomu.edu/"
+      }
     ],
 
     "extracurricular": [
-        {
-            "organization": "Assocation of Computing Machinery",
-            "role": "ACM Member/Officer",
-            "location": "Bloomsburg, Pennsylvania",
-            "date-range": "Aug. 2015 - Present",
-            "active": true,
-            "list-items": [
-                "Vice-President, Fall/Spring 2017-2018.",
-                "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
-                "Competitor for BU's ACM student chapter programming competition team.",
-                "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
-            ]
-        }
+      {
+        "organization": "Assocation of Computing Machinery",
+        "role": "ACM Member/Officer",
+        "location": "Bloomsburg, Pennsylvania",
+        "date-range": "Aug. 2015 - Present",
+        "active": true,
+        "list-items": [
+            "Vice-President, Fall/Spring 2017-2018.",
+            "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
+            "Competitor for BU's ACM student chapter programming competition team.",
+            "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
+        ]
+      },
+      {
+        "organization": "PA Makerspace",
+        "role": "Volunteer/Member",
+        "location": "Phoenixville, Pennsylvania",
+        "date-range": "Jun. 2018 - Aug. 2018",
+        "active": "false",
+        "list-items": [
+          "Partcipated in classes in woodworking, leatherworking, vinyl cutting, & metal casting.",
+          "Taught a course series titled 'Getting Started With Web Development'",
+          "Worked with Makerspace members to get DIY 3D printers running."
+        ]
+      }
     ],
 
     "honors": [
@@ -106,6 +142,32 @@
 
     "presentations": [
 
+    ],
+
+    "projects": [
+      {
+        "title": "BloomBus",
+        "description": "A cross-platform real-time tracking system for Bloomsburg University campus shuttle buses.",
+        "url": "bloombus.herokuapp.com",
+        "date-range": "2016-2019",
+        "list-items": [
+          "Designed and tested various hardware and software approaches to support real-time tracking.",
+          "Created mesh networks between GPS receivers using XBee radio transmitters.",
+          "Wrote a React PWA front-end for viewing bus routes, bus stops, current bus positions & ETAs.",
+          "Wrote an Android app for buses to track its current location & upload to Firebase.",
+          "Wrote serverless functions in TypeScript for watching bus proximity to bus stops & cleaning up DB.",
+          "Coordinated with heads of facilities, transportation, and community governance management to adopt this system."
+        ]
+      },
+      {
+        "title": "TapCache",
+        "description": "An Android app for geocache style communication using NFC tags.",
+        "url": "tapcache.johngibson.me",
+        "date-range": "2018",
+        "list-items": [
+          
+        ]
+      }
     ],
 
     "skills": [
