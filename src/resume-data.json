@@ -37,7 +37,7 @@
         "institution": "Jagiellonian University",
         "location": "Kraków, Poland",
         "date-range": "Winter Semester 2017-18, 2018-19",
-        "gpa": 4.0,
+        "gpa": "4.0",
         "active": false,
         "list-items": [
           "Coursework in International Relations, Central and Eastern European Film & Literature, European Jewish Experiences, & Post-Communist Transformations.",
@@ -174,25 +174,25 @@
 
   "skills": [
     {
-      "heading": "Compiled Languages",
+      "heading": "Interpreted Languages",
       "list-items": [
-          "Java (Networking, Databases, JSP/Servlets)",
-          "C",
-          "C++"
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Python"
       ]
     },
     {
-      "heading": "Interpreted Languages",
+      "heading": "Compiled Languages",
       "list-items": [
-          "JavaScript (ES6+)",
-          "TypeScript",
-          "Python"
+        "Java (Networking, Databases, JSP/Servlets)",
+        "C",
+        "C++"
       ]
     },
     {
       "heading": "Platforms",
       "list-items": [
-          "React.js",
+          "React",
           "Angular6",
           "Node.js",
           "jQuery",
@@ -202,23 +202,26 @@
       ]
     },
     {
-      "heading": "Data",
+      "heading": "Cloud & Data",
       "list-items": [
-          "MongoDB",
-          "SQL",
-          "Firebase",
-          "JSON",
-          "XML"
+        "Firebase",
+        "Google Cloud Platform (GCN)",
+        "Amazon Web Services (AWS)",
+        "MongoDB",
+        "SQL",
+        "JSON",
+        "XML"
       ]
     },
     {
       "heading": "Other",
       "list-items": [
-          "Git",
-          "Progressive Web Apps (PWAs)",
-          "LaTeX",
-          "HTML5&CSS3",
-          "ArcGIS (ArcMap 10.6 & Pro)"
+        "Git",
+        "Progressive Web Apps (PWAs)",
+        "HTML5&CSS3",
+        "ArcGIS (ArcMap 10.6 & Pro)",
+        "Android Development",
+        "LaTeX"
       ]
     }
   ],
