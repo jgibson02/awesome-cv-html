@@ -1,59 +1,45 @@
 {
   "about-me": {
-      "first-name": "John H.",
-      "last-name": "Gibson",
-      "location": "1036 Hemlock Lane, Enola, Pennsylvania 17025",
-      "mobile": "17178776438",
-      "mobile-display": "(717) 877-6438",
-      "email": "career@johngibson.me",
-      "website": "johngibson.me",
-      "github": "jgibson02",
-      "linkedin": "jgibson02",
-      "medium": "jgibson02",
-      "codepen": "jgibson02",
-      "position": "Computer Science Student",
-      "description": "Currently a student mentor and tutor for the Computer Science Living and Learning Community at Bloomsburg University, and a software engineering intern working with the Systems Engineering and Engineering Methods branch at NASA Langley Research Center. Enjoys working primarily with OOP technologies and web development, with a particular interest in user experience design."
+    "first-name": "First",
+    "last-name": "Last",
+    "location": "Address",
+    "mobile": "12345678910",
+    "mobile-display": "(234) 567-8910",
+    "email": "mail@firstlast.me",
+    "website": "firstlast.me",
+    "github": "firstlast",
+    "linkedin": "firstlast",
+    "medium": "firstlast",
+    "codepen": "firstlast",
+    "position": "Position name",
+    "description": "Position description"
   },
 
-  "committees": [
-      
-  ],
+  "committees": [],
 
   "education": [
-      {
-          "study": "B.S. in Computer Science",
-          "gpa": 3.65,
-          "institution": "Bloomsburg University of Pennsylvania",
-          "location": "Bloomsburg, Pennsylvania",
-          "date-range": "Aug. 2015 - Exp. May 2019",
-          "active": true,
-          "list-items": [
-            "Dean's List: Spring 2016 - Present.",
-            "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
-          ]
-      },
-      {
-        "study": "Polish Language and Culture",
-        "institution": "Jagiellonian University",
-        "location": "Kraków, Poland",
-        "date-range": "Winter Semester 2017-18, 2018-19",
-        "gpa": "4.0",
-        "active": false,
-        "list-items": [
-          "Coursework in International Relations, Central and Eastern European Film & Literature, European Jewish Experiences, & Post-Communist Transformations.",
-          "Served as a mentor for other students within the study abroad program & guided them through various cities."
-        ]
+    {
+      "study": "B.S. in Computer Science",
+      "gpa": 3.65,
+      "institution": "Bloomsburg University of Pennsylvania",
+      "location": "Bloomsburg, Pennsylvania",
+      "date-range": "Aug. 2015 - Exp. May 2019",
+      "active": true,
+      "list-items": [
+        "Dean's List: Spring 2016 - Present.",
+        "Received the Henry Carver Math, Science, and Technology Scholarship awarded to promising students in the College of Science and Technology."
+      ]
     }
   ],
 
   "experience": [
     {
+      "active": true,
       "title": "GIS Intern",
       "institution": "Columbia County GIS",
       "location": "Bloomsburg, Pennsylvania",
       "date-range": "Jan. 2019 - Present",
       "span": "1 month",
-      "active": true,
       "list-items": [
         "Completion of comprehensive GIS curriculum consisting of necessary geospatial skills.",
         "Assisting the director of the county GIS office with current data maintenance workflows.",
@@ -66,11 +52,11 @@
       "date-range": "Jun. 2018 - Aug. 2018",
       "institution": "Qurate Retail Group",
       "list-items": [
-          "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
-          "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
-          "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
-          "Built the MDM web application, first in React, then ported to Angular 6.",
-          "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
+        "Assisted porting transaction services from IBM mainframes to Java Spring Boot micro-services.",
+        "Implemented circuit-breaker pattern into those services using Netflix's Hystrix framework.",
+        "Built a Master Data Management system to relate and organize the voluminous IT portfolio across Qurate's 8 companies.",
+        "Built the MDM web application, first in React, then ported to Angular 6.",
+        "Worked on CI/CD pipeline for MDM application which involved Jenkins and SSH deployments."
       ],
       "location": "West Chester, Pennsylvania",
       "span": "3 months",
@@ -82,10 +68,10 @@
       "date-range": "Jun. 2017 - Aug. 2017",
       "institution": "NASA Langley Research Center",
       "list-items": [
-          "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
-          "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
-          "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
-          "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
+        "Developed a Java plugin for MagicDraw to enable system engineers to track changes to UML projects, synchronize these changes with their team's SharePoint sites, and notify team members of changes.",
+        "Designed and built a React.js webapp to view, comment, and track the diagrams of a project in its present state.",
+        "Created tools to generate project changelogs, structure project data as JSON, and store user configurations in XML",
+        "Led major project design overhauls to accurately meet the user interface needs of the systems engineering department."
       ],
       "location": "Hampton, Virginia",
       "span": "3 months",
@@ -97,11 +83,11 @@
       "date-range": "Aug. 2016 - Present",
       "institution": "Bloomsburg University of Pennsylvania",
       "list-items": [
-          "Supporting the academic success and wellness of freshmen in the Computer Science program.",
-          "Tutoring mentees in Computer Science and Mathematics courses.",
-          "Planning and organizing events for members of the Living and Learning Community.",
-          "Establishing server infrastructure and applications for use by LLC members.",
-          "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
+        "Supporting the academic success and wellness of freshmen in the Computer Science program.",
+        "Tutoring mentees in Computer Science and Mathematics courses.",
+        "Planning and organizing events for members of the Living and Learning Community.",
+        "Establishing server infrastructure and applications for use by LLC members.",
+        "Building and programming GoPiGo robots in Python with LLC members and faculty directors."
       ],
       "location": "Bloomsburg, Pennsylvania",
       "span": "3 years",
@@ -118,10 +104,10 @@
       "date-range": "Aug. 2015 - Present",
       "active": true,
       "list-items": [
-          "Vice-President, Fall/Spring 2017-2018.",
-          "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
-          "Competitor for BU's ACM student chapter programming competition team.",
-          "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
+        "Vice-President, Fall/Spring 2017-2018.",
+        "Set up an OpenStack private cloud environment on donated networking hardware for student projects.",
+        "Competitor for BU's ACM student chapter programming competition team.",
+        "Providing tutorial services for 3-4 hours a week in Computer Science and Mathematics courses."
       ]
     },
     {
@@ -138,13 +124,9 @@
     }
   ],
 
-  "honors": [
+  "honors": [],
 
-  ],
-
-  "presentations": [
-
-  ],
+  "presentations": [],
 
   "projects": [
     {
@@ -166,39 +148,29 @@
       "description": "An Android app for geocache style communication using NFC tags.",
       "url": "tapcache.johngibson.me",
       "date-range": "2018",
-      "list-items": [
-        
-      ]
+      "list-items": []
     }
   ],
 
   "skills": [
     {
       "heading": "Interpreted Languages",
-      "list-items": [
-        "JavaScript (ES6+)",
-        "TypeScript",
-        "Python"
-      ]
+      "list-items": ["JavaScript (ES6+)", "TypeScript", "Python"]
     },
     {
       "heading": "Compiled Languages",
-      "list-items": [
-        "Java (Networking, Databases, JSP/Servlets)",
-        "C",
-        "C++"
-      ]
+      "list-items": ["Java (Networking, Databases, JSP/Servlets)", "C", "C++"]
     },
     {
       "heading": "Platforms",
       "list-items": [
-          "React",
-          "Angular6",
-          "Node.js",
-          "jQuery",
-          "Express.js",
-          "Bootstrap",
-          "Webpack/Gulp+Browserify"
+        "React",
+        "Angular6",
+        "Node.js",
+        "jQuery",
+        "Express.js",
+        "Bootstrap",
+        "Webpack/Gulp+Browserify"
       ]
     },
     {
@@ -226,7 +198,5 @@
     }
   ],
 
-  "writing": [
-
-  ]
+  "writing": []
 }

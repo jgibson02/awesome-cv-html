@@ -1,7 +1,7 @@
 {
-  "name": "jgibson-resume",
+  "name": "awesome-cv-html",
   "version": "1.0.0",
-  "description": "My resume, originally created using Awesome-CV by posquit0, now ported to HTML+CSS.",
+  "description": "HTML+CSS resume template, ported from posquit0/Awesome-CV",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
