@@ -4,4 +4,4 @@ If you would like to use this template for your own resume, simply clone this re
 
 Original template: [posquit0/Awesome-CV](https://github.com/posquit0/Awesome-CV)
 
-<img width=600 src="https://user-images.githubusercontent.com/5069711/29247694-5ffca116-7fd8-11e7-85b7-f7120e4d1c83.png">
+![image](https://user-images.githubusercontent.com/5069711/158489156-ba878ef0-8a16-4aaf-bee9-7d683382f5ac.png)
